@@ -1,1 +1,4 @@
-/* CSS declarations go here */
+.padded {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

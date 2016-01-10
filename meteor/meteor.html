@@ -10,8 +10,8 @@
 
 <template name="main">
   <div class="row">
-    <div class="col-xs-3 col-xs-offset-3">
-      <select>
+    <div class="col-xs-3 col-xs-offset-3 text-center padded">
+      <select class="form-control">
         {{ #each mapList }}
           <option>
             {{ mapName }}
@@ -19,17 +19,21 @@
         {{ /each }}
       </select>
     </div>
-    <div class="col-xs-3">
+    <div class="col-xs-3 text-center padded">
+      <div class="btn-group" role="group">
+        <button type="button" class="btn {{ btnClass 'ct' }} ct-strat-btn">CT</button>
+        <button type="button" class="btn {{ btnClass 't' }} t-strat-btn">T</button>
+      </div>
     </div>
   </div>
   <div class="row">
     {{ #with map }}
       <div class="col-xs-3">
-        {{ #each strats }}
-          <a href="#!" class="strat-name">{{ stratName }}</a>
+        {{ #each availableStrats }}
+          <a href="#!" class="btn btn-block {{ isSelectedStrat stratName }} strat-name">{{ stratName }}</a>
         {{ /each }}
       </div>
-      <div class="col-xs-9">
+      <div class="col-xs-9 text-center padded">
         {{ #with strat }}
           <img src="{{ url }}">
         {{ /with }}
