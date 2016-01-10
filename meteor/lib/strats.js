@@ -1,6 +1,7 @@
 Strats = [
   {
     mapName: 'Inferno',
+    defaultMapUrl: 'img/inferno_base.jpg',
     strats: [
       {
         stratName: 'Rash B No Stop',
@@ -10,10 +11,10 @@ Strats = [
       {
         stratName: 'Hold B No Stop',
         side: 'ct',
-        url: 'img/dust2ct.jpeg'
+        url: 'img/inferno_ct_1.jpg'
       },
       {
-        stratName: 'Hold B No Stop',
+        stratName: 'Hold B Stop',
         side: 'ct',
         url: 'img/dust2ct.jpeg'
       },

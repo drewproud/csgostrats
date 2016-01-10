@@ -2,3 +2,28 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+body {
+  background-color: #48535D;
+}
+
+html, body, .container-fluid {
+  height: 100%;
+}
+
+.img-row {
+  height: -webkit-calc(100vh - 74px);
+  height: -moz-calc(100vh - 74px);
+  height: calc(100vh - 74px);
+  padding-bottom: 15px;
+}
+
+.img-responsive {
+  height: 100%;
+  width: auto;
+}
+
+.map-selected {
+  text-align: center;
+  color: #CCCCCC;
+}
