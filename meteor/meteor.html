@@ -1,0 +1,39 @@
+<head>
+  <title>CS GO Strats</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    {{> main }}
+  </div>
+</body>
+
+<template name="main">
+  <div class="row">
+    <div class="col-xs-3 col-xs-offset-3">
+      <select>
+        {{ #each mapList }}
+          <option>
+            {{ mapName }}
+          </option>
+        {{ /each }}
+      </select>
+    </div>
+    <div class="col-xs-3">
+    </div>
+  </div>
+  <div class="row">
+    {{ #with map }}
+      <div class="col-xs-3">
+        {{ #each strats }}
+          <a href="#!" class="strat-name">{{ stratName }}</a>
+        {{ /each }}
+      </div>
+      <div class="col-xs-9">
+        {{ #with strat }}
+          <img src="{{ url }}">
+        {{ /with }}
+      </div>
+    {{ /with }}
+  </div>
+</template>
