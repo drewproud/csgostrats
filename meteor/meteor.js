@@ -4,6 +4,16 @@ if (Meteor.isClient) {
   Session.setDefault('side', 'ct');
   Session.setDefault('strat', 'Rash B No Stop');
 
+  Template.main.autorun(function() {
+    var stratName = Session.get('strat');
+    var side = Session.get('side');
+    var strat = _.findWhere(this.strats, { stratName: stratName, side: side });
+
+    if (!strat || !stratName) {
+      Session.set('strat', 'default');
+    }
+  });
+
   Template.main.helpers({
     mapList: function () {
       return Strats;
@@ -20,19 +30,26 @@ if (Meteor.isClient) {
       return _.where(this.strats, { side: side });
     },
 
-    strat: function() {
+    mapUrl: function() {
       var stratName = Session.get('strat');
       var side = Session.get('side');
       var strat = _.findWhere(this.strats, { stratName: stratName, side: side });
+      var defaultUrl = this.defaultMapUrl;
 
-      if (stratName && strat) {
-        return strat;
-      // } else if (this.strats && this.strats.length) {
-      //   // return default if none selected
-      //   return this.strats[0];
+      if (Session.equals('strat', 'default')) {
+        return defaultUrl;
       } else {
-        return '';
+        return strat.url;
       }
+
+      // if (stratName && strat) {
+      //   return strat;
+      // // } else if (this.strats && this.strats.length) {
+      // //   // return default if none selected
+      // //   return this.strats[0];
+      // } else {
+      //   return '';
+      // }
     },
 
     btnClass: function(thisButtonSide) {
