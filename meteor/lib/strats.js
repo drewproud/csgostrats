@@ -1,7 +1,7 @@
 Strats = [
   {
     mapName: 'Cache',
-    defaultMapUrl: 'img/inferno_base.jpg',
+    defaultMapUrl: 'img/cache_base.png',
     strats: [
       {
         stratName: 'Rash B No Stop',
@@ -67,7 +67,7 @@ Strats = [
 //BREAK
   {
     mapName: 'Inferno',
-    defaultMapUrl: 'img/cobblestone_base.png',
+    defaultMapUrl: 'img/inferno_base.jpg',
     strats: [
       {
         stratName: 'Rash B No Stop',
@@ -89,7 +89,7 @@ Strats = [
 //BREAK
   {
     mapName: 'Mirage',
-    defaultMapUrl: 'img/cobblestone_base.png',
+    defaultMapUrl: 'img/mirage_base.jpg',
     strats: [
       {
         stratName: 'Rash B No Stop',
@@ -110,30 +110,8 @@ Strats = [
   },
   //BREAK
   {
-    mapName: 'Mirage',
-    defaultMapUrl: 'img/cobblestone_base.png',
-    strats: [
-      {
-        stratName: 'Rash B No Stop',
-        side: 't',
-        url: 'img/dust2test.jpeg'
-      },
-      {
-        stratName: 'Hold B No Stop',
-        side: 'ct',
-        url: 'img/dust2ct.jpeg'
-      },
-      {
-        stratName: 'Hold B No Stop',
-        side: 'ct',
-        url: 'img/dust2ct.jpeg'
-      },
-    ]
-  },
-//BREAK
-  {
     mapName: 'Nuke',
-    defaultMapUrl: 'img/cobblestone_base.png',
+    defaultMapUrl: 'img/nuke_base.jpg',
     strats: [
       {
         stratName: 'Rash B No Stop',
@@ -155,7 +133,7 @@ Strats = [
 //BREAK
   {
     mapName: 'Overpass',
-    defaultMapUrl: 'img/cobblestone_base.png',
+    defaultMapUrl: 'img/overpass_base.jpg',
     strats: [
       {
         stratName: 'Rash B No Stop',
@@ -177,7 +155,7 @@ Strats = [
 //BREAK
   {
     mapName: 'Season',
-    defaultMapUrl: 'img/cobblestone_base.png',
+    defaultMapUrl: 'img/season_base.jpg',
     strats: [
       {
         stratName: 'Rash B No Stop',
@@ -199,7 +177,7 @@ Strats = [
  //BREAK
   {
     mapName: 'Train',
-    defaultMapUrl: 'img/cobblestone_base.png',
+    defaultMapUrl: 'img/train_base.jpg',
     strats: [
       {
         stratName: 'Rash B No Stop',
