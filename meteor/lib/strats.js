@@ -108,7 +108,7 @@ Strats = [
       },
     ]
   },
-  //BREAK
+//BREAK
   {
     mapName: 'Nuke',
     defaultMapUrl: 'img/nuke_base.jpg',
@@ -196,3 +196,4 @@ Strats = [
       },
     ]
   }
+]
